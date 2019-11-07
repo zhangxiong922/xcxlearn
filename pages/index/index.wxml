@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="box">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <button open-type='getUserInfo' bindgetuserinfo="getInfo" style='display:{{authSetting?"block":"none"}}' >获取用户登录信息</button>
+    <text class="tet">{{userInfo.nickName}}</text>
+    <view class="btn" catchtap="toLog">
+       <text>开启小程序之旅</text>
+    </view>
+</view>

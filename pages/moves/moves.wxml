@@ -1,0 +1,12 @@
+<!--pages/moves/moves.wxml-->
+<view class="box">
+   <navigator url="/pages/moiveDetail/moiveDetail?index={{index}}" class="list1" wx:for="{{list}}" wx:key="*this">
+      <image src="{{item.images.large}}"></image>  
+      <view class="list2">
+          <text>{{item.title}}</text>
+          <text>年份: {{item.year}}</text>
+          <text>导演: {{item.directors[0].name}}</text>
+      </view>
+      <view class="list3">{{item.rating.average}}</view>
+   </navigator>
+</view>

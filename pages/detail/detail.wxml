@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<view class="box">
+   <view class="list1">
+      <image class="musicDel" src="{{list.detail_img}}"></image>
+     
+   </view>
+   <view class="list2">
+      <image src="{{list.avatar}}"></image>
+      <text>{{list.author}}</text>
+      <text>发布于 {{list.date}}</text>
+   </view>
+   <view class="list3">{{list.title}}</view>
+   <view class="list4">
+       <image wx:if="{{!isShow}}" catchtap='imgTap' src="/image/icon/collection-anti.png"></image>
+       <image wx:if="{{isShow}}" catchtap='imgTap' src="/image/icon/collection.png"></image>
+       <image catchtap='zhuanfa' src="/image/icon/share.png"></image>
+   </view>
+   <view class="list5">
+       <button open-type="share">转发此文章</button>
+   </view>
+   <view class="list6">{{list.detail_content}}</view>
+</view>

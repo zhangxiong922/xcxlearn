@@ -1,0 +1,29 @@
+/* pages/index/index.wxss */
+page {
+  height: 100%;
+  background-color: #8ed145;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 200rpx auto;
+  border-radius: 50%;
+}
+.tet {
+   font-size: 32rpx;
+   font-weight: bold;
+   margin-bottom: 50rpx;
+}
+.btn {
+  border: 1px solid #000;
+  width: 300rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100rpx;
+}

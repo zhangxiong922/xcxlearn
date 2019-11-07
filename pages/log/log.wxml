@@ -1,0 +1,21 @@
+<!--pages/log/log.wxml-->
+<import src="/pages/log-template/template.wxml"/>
+<view class="swiper">
+<swiper catchtap='sToDetail' indicator-dots indicator-color="white" indicator-active-color="skyblue" autoplay interval='3000' circular>
+          <swiper-item>
+            <image data-list='1' src="/image/detail/carousel/01.jpg"></image>
+          </swiper-item>
+          <swiper-item>
+            <image data-list='0' src="/image/detail/carousel/02.jpg"></image>
+          </swiper-item><swiper-item>
+            <image data-list='2' src="/image/detail/carousel/03.jpg"></image>
+          </swiper-item><swiper-item>
+            <image data-list='3' src="/image/detail/carousel/04.jpg"></image>
+          </swiper-item>
+      </swiper>
+</view>
+<block wx:for="{{logListJss}}" wx:key="*this">
+<view catchtap="toDetail" data-toDetail='{{index}}'>
+<template is="logTemplate" data="{{...item}}"/>
+</view>
+</block>

@@ -1,0 +1,9 @@
+<!--pages/moiveDetail/moiveDetail.wxml-->
+<view class="box">
+   <image src="{{list.images.large}}"></image>
+   <text class="list1">{{list.original_title}}</text>
+   <text class="list2">评分: {{list.rating.average}}</text>
+   <text class="list2">导演: {{list.directors[0].name}}</text>
+   <text class="list3">主演: {{list.casts[0].name}} {{list.casts[1].name}} {{list.casts[2].name}} </text>
+   <button>我要观影</button>
+</view>

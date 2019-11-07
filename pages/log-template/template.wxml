@@ -1,0 +1,22 @@
+<template name="logTemplate">
+   <view class="box">
+     <view class="list1">
+        <image src="{{avatar}}"></image>
+        <text>{{date}}</text>
+     </view>
+     <view class="list2">{{title}}</view>
+     <view class="list3">
+     <image src="{{detail_img}}"></image>
+     </view>
+     <view class="list4">
+       {{detail_content}}
+     </view>
+     <view class="list5">
+        <image src="{{detail_love_image1}}"></image>
+        <text>{{love_count}}</text>
+        <image src="{{detail_love_image2}}"></image>
+        <text>{{attention_count}}</text>
+     </view>
+     
+   </view>
+</template>
